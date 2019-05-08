@@ -3,7 +3,7 @@ highlighter: rogue
 name: Nishan Mudalige
 
 title: Nishan Mudalige - Personal Website
-email:mudalign@uoguelph.ca
+email: "mudalign@uoguelph.ca"
 description: Personal website of Nishan Mudalige
 baseurl: "https://nishanmudalige.github.io"
 url: "https://nishanmudalige.github.io"
