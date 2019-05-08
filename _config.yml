@@ -1,12 +1,11 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Nishan Mudalige - Personal Website
+email:mudalign@uoguelph.ca
+description: > Personal website of Nishan Mudalige
+baseurl: https://nishanmudalige.github.io
+url: https://nishanmudalige.github.io
 
-twitter_username:
-github_username:
+github_username: nishanmudalige
 
 # Build settings
 markdown: kramdown
