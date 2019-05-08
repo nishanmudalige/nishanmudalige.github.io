@@ -1,2 +1,3 @@
 User-agent: *
-Disallow:
+Allow: /
+Allow: /sitemap.htm
