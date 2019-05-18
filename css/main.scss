@@ -111,9 +111,11 @@ body{
   left:0;
   width:100vw;
   z-index:1;
-  // background:#225470;
-  background:#092e42;
-  opacity:0.85;
+  // background:#225470; // original
+  // background:#092e42; // my personal
+  // opacity:0.85;
+  background:#000000;
+  opacity:0.25;
 }
 
 .header-content{
