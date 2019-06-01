@@ -2,17 +2,19 @@ a:link {
   color: red;
 }
 
-/* visited link */
+/* visited link
 a:visited {
   color: green;
 }
+*/
 
 /* mouse over link */
 a:hover {
   color: hotpink;
 }
 
-/* selected link */
+/* selected link
 a:active {
   color: blue;
 }
+ */
