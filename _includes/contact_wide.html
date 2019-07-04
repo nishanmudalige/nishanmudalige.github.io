@@ -17,45 +17,43 @@
   <!-- Google Map, Addess and Email -->
   <div class="container">
     <div class="row ex1">
-      <!-- Google Mal -->
+      <!-- Google Map -->
       <div style="padding: 0px 0px 0px 0px;" class="col-lg-12 contact">
-      <!-- <div style="padding: 0px 50px 0px 0px;" class="col-lg-12 contact"> -->
-        <!-- <div style="padding: 0px 50px 0px 0px;" class="service-box contact"> -->
-          <head>
-            <style>
-              /* Set the size of the div element that contains the map */
-              #map {
-              height: 450px;  /* The height is 400 pixels */
-              width: 100%;    /* The width is the width of the web page */
+        <head>
+          <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+            height: 500px;  /* The height is 400 pixels */
+            width: 100%;    /* The width is the width of the web page */
+            }
+          </style>
+        </head>
+        <body>
+          <center>
+            <div id="map"></div>
+            <!--
+              <iframe src="https://www.google.com/maps?q=MacNaughton Building, Room 315&output=embed"
+                      width="450" height="425" frameborder="0" style="border:0" allowfullscreen>
+              </iframe>
+              -->
+            <script>
+              // Initialize and add the map
+              function initMap() {
+                // The location of MacNaughton
+                var macn = {lat: 43.530706, lng: -80.227486};
+                // The map, centered at MacNaughton
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 15.90, center: macn});
+                // The marker, positioned at MacNaughton
+                var marker = new google.maps.Marker({position: macn, map: map});
               }
-            </style>
-          </head>
-          <body>
-            <center>
-              <div id="map"></div>
-              <!--
-                <iframe src="https://www.google.com/maps?q=MacNaughton Building, Room 315&output=embed"
-                        width="450" height="425" frameborder="0" style="border:0" allowfullscreen>
-                </iframe>
-                -->
-              <script>
-                // Initialize and add the map
-                function initMap() {
-                  // The location of MacNaughton
-                  var macn = {lat: 43.530706, lng: -80.227486};
-                  // The map, centered at MacNaughton
-                  var map = new google.maps.Map(
-                      document.getElementById('map'), {zoom: 15.90, center: macn});
-                  // The marker, positioned at MacNaughton
-                  var marker = new google.maps.Marker({position: macn, map: map});
-                }
-              </script>
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABvuz4QPXKPsOiwRL_FdnbVFplVa5ct6Q&callback=initMap"></script>
-            </center>
-          </body>
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABvuz4QPXKPsOiwRL_FdnbVFplVa5ct6Q&callback=initMap"></script>
+          </center>
+        </body>
         <!-- </div> -->
-      <br>
-      <br>
+        <br>
+        <br>
       </div>
       <!-- Address and Email -->
       <div class="col-lg-7 text-left contact">
@@ -192,7 +190,6 @@
   <center>
     <a href="#page-top" class="btn btn-primary btn-xl page-scroll section">Back to top</a>
   </center>
-  <br>
   <br>
   <br>
   <br>
