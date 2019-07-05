@@ -1,5 +1,4 @@
 <section id="contactme" class="no-padding">
-
   <div class="container">
     <div class="row text-center">
       <br>
@@ -9,11 +8,8 @@
       <hr class="primary">
     </div>
   </div>
-  
   <div class="container" align="center">
   <div class="row" align="left">
-  
-    
   <!-- Google Map, Addess and Email -->
   <div class="container">
     <div class="row ex1">
@@ -31,65 +27,63 @@
         <body>
           <center>
             <div id="map"></div>
-              <!--
+            <!--
               <iframe src="https://www.google.com/maps?q=MacNaughton Building, Room 315&output=embed"
                       width="450" height="425" frameborder="0" style="border:0" allowfullscreen>
               </iframe>
               -->
             <!--
+              <script>
+                // Initialize and add the map
+                function initMap() {
+                  // The location of MacNaughton
+                  var myoffice = {lat: 43.530706, lng: -80.227486};
+                  // The map, centered at MacNaughton
+                  var map = new google.maps.Map(
+                      document.getElementById('map'), {zoom: 15.90, center: myoffice});
+                  // The marker, positioned at MacNaughton
+                  var marker = new google.maps.Marker({position: myoffice, map: map});
+                }
+              </script>
+              -->
             <script>
-              // Initialize and add the map
+              // This example displays a marker at the center of Australia.
+              // When the user clicks the marker, an info window opens.
+              
               function initMap() {
-                // The location of MacNaughton
                 var myoffice = {lat: 43.530706, lng: -80.227486};
-                // The map, centered at MacNaughton
-                var map = new google.maps.Map(
-                    document.getElementById('map'), {zoom: 15.90, center: myoffice});
-                // The marker, positioned at MacNaughton
-                var marker = new google.maps.Marker({position: myoffice, map: map});
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 16.0,
+                  center: myoffice
+                });
+              
+                var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h4 id="firstHeading" class="firstHeading">Room 315, MacNaughton Building</h4>'+
+                    '<div id="bodyContent">'+
+                    // '<p>University of Guelph</p>'+
+                    '<p> <a href="https://www.google.com/maps/place/MacNaughton+Bldg,+482+Gordon+St,+Guelph,+ON+N1G+1Y4,+Canada/@43.530706,-80.227486,17z/data=!3m1!4b1!4m5!3m4!1s0x882b9b295b68f6b5:0x748306a355a84909!8m2!3d43.5306223!4d-80.2273388?hl=en-CA" target="_blank">'+
+                    'View on Google Maps</a> </p>'+
+                    '</div>'+
+                    '</div>';
+              
+                var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+                });
+              
+                var marker = new google.maps.Marker({
+                  position: myoffice,
+                  map: map,
+                  title: 'myoffice (Ayers Rock)'
+                });
+                marker.addListener('click', function() {
+                  infowindow.open(map, marker);
+                });
               }
             </script>
-            -->
-                <script>
-
-      // This example displays a marker at the center of Australia.
-      // When the user clicks the marker, an info window opens.
-
-      function initMap() {
-        var myoffice = {lat: 43.530706, lng: -80.227486};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16.0,
-          center: myoffice
-        });
-
-        var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h4 id="firstHeading" class="firstHeading">Room 315, MacNaughton Building</h4>'+
-            '<div id="bodyContent">'+
-            // '<p>University of Guelph</p>'+
-            '<p> <a href="https://www.google.com/maps/place/MacNaughton+Bldg,+482+Gordon+St,+Guelph,+ON+N1G+1Y4,+Canada/@43.530706,-80.227486,17z/data=!3m1!4b1!4m5!3m4!1s0x882b9b295b68f6b5:0x748306a355a84909!8m2!3d43.5306223!4d-80.2273388?hl=en-CA" target="_blank">'+
-            'View on Google Maps</a> </p>'+
-            '</div>'+
-            '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-          position: myoffice,
-          map: map,
-          title: 'myoffice (Ayers Rock)'
-        });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-      }
-    </script>
             <script async defer 
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABvuz4QPXKPsOiwRL_FdnbVFplVa5ct6Q&callback=initMap">
-            </script>
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABvuz4QPXKPsOiwRL_FdnbVFplVa5ct6Q&callback=initMap"></script>
           </center>
         </body>
         <!-- </div> -->
@@ -110,7 +104,7 @@
         </div>
       </div>
       <div style="padding: 0px 0px 0px 25px;" class="col-lg-5 text-left contact">
-        <div class="service-box text-left contact">          
+        <div class="service-box text-left contact">
           <h3 id="email">Email</h3>
           <br>
           <h4 class="text-muted"> mudalign [at] uoguelph [dot] ca </h4>
