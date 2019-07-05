@@ -40,12 +40,12 @@
               // Initialize and add the map
               function initMap() {
                 // The location of MacNaughton
-                var macn = {lat: 43.530706, lng: -80.227486};
+                var myoffice = {lat: 43.530706, lng: -80.227486};
                 // The map, centered at MacNaughton
                 var map = new google.maps.Map(
-                    document.getElementById('map'), {zoom: 15.90, center: macn});
+                    document.getElementById('map'), {zoom: 15.90, center: myoffice});
                 // The marker, positioned at MacNaughton
-                var marker = new google.maps.Marker({position: macn, map: map});
+                var marker = new google.maps.Marker({position: myoffice, map: map});
               }
             </script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABvuz4QPXKPsOiwRL_FdnbVFplVa5ct6Q&callback=initMap"></script>
