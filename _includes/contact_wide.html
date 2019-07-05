@@ -56,10 +56,10 @@
       // When the user clicks the marker, an info window opens.
 
       function initMap() {
-        var uluru = {lat: 43.530706, lng: -80.227486};
+        var myoffice = {lat: 43.530706, lng: -80.227486};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16.0,
-          center: uluru
+          center: myoffice
         });
 
         var contentString = '<div id="content">'+
@@ -78,9 +78,9 @@
         });
 
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: myoffice,
           map: map,
-          title: 'Uluru (Ayers Rock)'
+          title: 'myoffice (Ayers Rock)'
         });
         marker.addListener('click', function() {
           infowindow.open(map, marker);
