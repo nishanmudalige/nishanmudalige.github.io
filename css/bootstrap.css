@@ -6642,6 +6642,6 @@ html{
   to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(0, 143, 17, .9);}
   to{border-right-color: transparent;}
 }
