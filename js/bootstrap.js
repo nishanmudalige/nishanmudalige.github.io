@@ -9,7 +9,7 @@ if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
 
-+function ($) {
+function ($) {
   'use strict';
   var version = $.fn.jquery.split(' ')[0].split('.')
   if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {
@@ -2305,3 +2305,50 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
+
+
+
+
+    $(function() {
+
+      var $window           = $(window),
+          win_height_padded = $window.height() * 1.1,
+          isTouch           = Modernizr.touch;
+
+      if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+      $window.on('scroll', revealOnScroll);
+
+      function revealOnScroll() {
+        var scrolled = $window.scrollTop(),
+            win_height_padded = $window.height() * 1.1;
+
+        // Showed...
+        $(".revealOnScroll:not(.animated)").each(function () {
+          var $this     = $(this),
+              offsetTop = $this.offset().top;
+
+          if (scrolled + win_height_padded > offsetTop) {
+            if ($this.data('timeout')) {
+              window.setTimeout(function(){
+                $this.addClass('animated ' + $this.data('animation'));
+              }, parseInt($this.data('timeout'),10));
+            } else {
+              $this.addClass('animated ' + $this.data('animation'));
+            }
+          }
+        });
+        // Hidden...
+       $(".revealOnScroll.animated").each(function (index) {
+          var $this     = $(this),
+              offsetTop = $this.offset().top;
+          if (scrolled + win_height_padded < offsetTop) {
+            $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+          }
+        });
+      }
+
+      revealOnScroll();
+    });
