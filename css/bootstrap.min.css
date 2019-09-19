@@ -7924,5 +7924,11 @@ html{
 
 
 .anim-blink{
-  animation:blinkTextCursor 500ms infinite normal;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
