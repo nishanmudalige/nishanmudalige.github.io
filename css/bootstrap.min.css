@@ -7921,3 +7921,8 @@ html{
   from{border-right-color: rgba(0, 143, 17,.75);}
   to{border-right-color: transparent;}
 }
+
+
+.anim-blink{
+  animation:blinkTextCursor 500ms infinite normal;
+}
