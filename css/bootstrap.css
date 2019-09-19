@@ -6621,7 +6621,7 @@ html{
 
 .line-1{
     position: relative;
-    top: 50%;  
+    top: 0%;  
     width: 24em;
     margin: 0 auto;
     border-right: 10px solid rgba(255,255,255,.75);
