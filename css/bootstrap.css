@@ -6633,6 +6633,7 @@ html{
 }
 
 /* Animation */
+/*
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
@@ -6645,9 +6646,13 @@ html{
   from{border-right-color: rgba(0, 143, 17,.75);}
   to{border-right-color: transparent;}
 }
+*/
 
 
-.anim-blink{
+
+
+
+.blink_me {
   animation: blinker 1s linear infinite;
 }
 
