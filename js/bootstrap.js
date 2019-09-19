@@ -4,44 +4,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-    function typeEffect(element, speed) {
-      var text = element.innerHTML;
-      element.innerHTML = "";
-
-      var i = 0;
-      var timer = setInterval(function() {
-        if (i < text.length) {
-          element.append(text.charAt(i));
-          i++;
-        } else {
-          clearInterval(timer);
-        }
-      }, speed);
-    }
-
-    // application
-    var speed = 100;
-    var h1anim = document.querySelector('h1a');
-    var p = document.querySelector('p');
-    var delay = h1anim.innerHTML.length * speed + speed;
-
-    // type affect to header
-    typeEffect(h1anim, speed);
-
-
-    // type affect to body
-    setTimeout(function(){
-      p.style.display = "inline-block";
-      typeEffect(p, speed);
-    }, delay);
-
-
-
-
-
-
-
-
 
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
