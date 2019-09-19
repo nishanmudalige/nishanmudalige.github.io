@@ -6624,7 +6624,7 @@ html{
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 12px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
@@ -6642,6 +6642,6 @@ html{
   to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(0, 143, 17,.75);}
   to{border-right-color: transparent;}
 }
