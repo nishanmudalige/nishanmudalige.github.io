@@ -20,7 +20,7 @@
     }
 
     // application
-    var speed = 200;
+    var speed = 100;
     var h1anim = document.querySelector('h1a');
     var p = document.querySelector('p');
     var delay = h1anim.innerHTML.length * speed + speed;
