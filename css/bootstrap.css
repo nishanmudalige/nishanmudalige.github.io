@@ -6621,15 +6621,15 @@ html{
 
 .line-1{
     position: relative;
-    top: 0%;  
-    width: 7.2em;
-    margin: 0 0 0 0;
-    border-right: 10px solid rgba(255,255,255,.75);
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);
+    transform: translateY(-50%);    
 }
 
 /* Animation */
@@ -6639,9 +6639,9 @@ html{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 7.2em;}
+  to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(0, 143, 17, .9);}
+  from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
