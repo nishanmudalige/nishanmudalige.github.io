@@ -6670,10 +6670,9 @@ html{
 
 .output {
   text-align:center;
-  font-family: 'Source Code Pro', monospace;
   color:black;
   h1 {
-    font-size:30px;
+    font-size:24px;
   }
 }
 
