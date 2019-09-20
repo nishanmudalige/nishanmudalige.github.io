@@ -240,17 +240,12 @@ th {
     max-width: 100% !important;
   }
   p,
-  h2 {
-    orphans: 3;
-    widows: 3;
-  }
+  h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-  h2 {
-    page-break-after: avoid;
-  }
+  h2,
   h3 {
     page-break-after: avoid;
   }
@@ -6673,13 +6668,13 @@ html{
 
 
 
-
-
-
-
-output {
+.output {
   text-align:center;
+  font-family: 'Source Code Pro', monospace;
   color:black;
+  h1 {
+    font-size:30px;
+  }
 }
 
 /* Cursor Styling */
