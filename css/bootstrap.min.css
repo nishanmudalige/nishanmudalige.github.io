@@ -7885,9 +7885,11 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 
 .output {
+  font-weight:bold;
   text-align:center;
   color:black;
 }
+
 
 /* Cursor Styling */
 
