@@ -6666,10 +6666,21 @@ html{
 */
 
 
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+
+.output {
+  text-align:center;
+  color:black;
+}
 
 
 .output {
-  font-weight:bolder;
   text-align:center;
   color:black;
 }
