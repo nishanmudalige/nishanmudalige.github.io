@@ -6679,7 +6679,11 @@ html{
 
 .output {
   text-align:center;
-  color:black;
+  font-family: 'Source Code Pro', monospace;
+  color:white;
+  h2 {
+    font-size:30px;
+  }
 }
 
 /* Cursor Styling */
