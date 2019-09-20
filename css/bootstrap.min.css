@@ -7884,8 +7884,20 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
  */
 
 
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+
 .output {
-  font-weight:bolder;
+  text-align:center;
+  color:black;
+}
+
+.output {
   text-align:center;
   color:black;
 }
