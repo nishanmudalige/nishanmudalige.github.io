@@ -7929,7 +7929,7 @@ html{
 
 
 
-
+/*
 .blink_me {
   animation: blinker 1s linear infinite;
 }
@@ -7939,7 +7939,7 @@ html{
     opacity: 0;
   }
 }
-
+*/
 
 
 
@@ -7961,13 +7961,13 @@ html{
   animation-duration:0.5s;
   animation-iteration-count: infinite;
 }
-h2.cursor::after {
-  height:30px;
-  width:14px;
+h1.cursor::after {
+  height:24px;
+  width:13px;
 }
 p.cursor::after {
-  height:30px;
-  width:14px;
+  height:13px;
+  width:6px;
 }
 
 @keyframes blink {
