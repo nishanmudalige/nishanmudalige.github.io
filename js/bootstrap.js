@@ -2379,9 +2379,7 @@ var i = 0,
     isParagraph = false;
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
-var textArray = [
-  "Coding Skills|Coding Skills"
-];
+var textArray = ["Coding Skills"];
 
 // Speed (in milliseconds) of typing.
 var speedForward = 100, //Typing Speed
@@ -2395,7 +2393,7 @@ typeWriter("output", textArray);
 function typeWriter(id, ar) {
   var element = $("#" + id),
       aString = ar[a],
-      eHeader = element.children("h2"), //Header element
+      eHeader = element.children("h1"), //Header element
       eParagraph = element.children("p"); //Subheader element
   
   // Determine if animation should be typing or backspacing
