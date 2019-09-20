@@ -6680,9 +6680,6 @@ html{
 output {
   text-align:center;
   color:black;
-  h1 {
-    font-size:30px;
-  }
 }
 
 /* Cursor Styling */
