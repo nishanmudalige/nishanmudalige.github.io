@@ -6669,9 +6669,11 @@ html{
 
 
 .output {
+  font-weight:bold;
   text-align:center;
   color:black;
 }
+
 
 /* Cursor Styling */
 
