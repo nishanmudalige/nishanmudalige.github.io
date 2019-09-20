@@ -2370,6 +2370,8 @@ var TxtType = function(el, toRotate, period) {
 
 
 
+
+
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
     a = 0,
@@ -2377,13 +2379,11 @@ var i = 0,
     isParagraph = false;
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
-var textArray = [
-  "Coding Skills"
-];
+var textArray = ["Coding Skills"];
 
 // Speed (in milliseconds) of typing.
 var speedForward = 100, //Typing Speed
-    speedWait = 3000, // Wait between typing and backspacing
+    speedWait = 1000, // Wait between typing and backspacing
     speedBetweenLines = 1000, //Wait between first and second lines
     speedBackspace = 25; //Backspace Speed
 
