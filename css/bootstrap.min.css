@@ -7945,6 +7945,13 @@ html{
 
 
 
+.output {
+  text-align:center;
+  color:black;
+}
+
+/* Cursor Styling */
+
 .cursor::after {
   content:'';
   display:inline-block;
