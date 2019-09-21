@@ -6709,3 +6709,10 @@ p.cursor::after {
     opacity:0;
   }
 }
+
+
+
+.margincenter {
+  margin: auto;
+  width: 25%;
+}
