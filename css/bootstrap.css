@@ -6681,7 +6681,7 @@ html{
   content:'';
   display:inline-block;
   margin-left:3px;
-  background-color:#6CD9A9;
+  background-color:black;
   animation-name:blink;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
