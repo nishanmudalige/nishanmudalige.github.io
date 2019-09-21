@@ -6666,40 +6666,29 @@ html{
 */
 
 
-p.thick {
-  font-weight: bold;
-}
-
-p.thicker {
-  font-weight: 900;
-}
-
 .output {
-  text-align:center;
-  color:black;
-}
-
-
-.output {
-  text-align:center;
+  text-align:left;
   color:black;
 }
 
 
 /* Cursor Styling */
+.cursor::before {
+  content:'>';
+}
 
 .cursor::after {
   content:'';
   display:inline-block;
   margin-left:3px;
-  background-color:black;
+  background-color:#6CD9A9;
   animation-name:blink;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
 }
-h2.cursor::after {
-  height:24px;
-  width:13px;
+h1.cursor::after {
+  height:28px;
+  width:7px;
 }
 p.cursor::after {
   height:13px;
