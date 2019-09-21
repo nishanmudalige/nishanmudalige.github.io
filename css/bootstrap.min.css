@@ -7904,7 +7904,7 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
 }
-h1.cursor::after {
+h2.cursor::after {
   height:28px;
   width:7px;
 }
