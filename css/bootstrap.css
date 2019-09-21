@@ -6686,7 +6686,7 @@ html{
   animation-duration:0.5s;
   animation-iteration-count: infinite;
 }
-h1.cursor::after {
+h2.cursor::after {
   height:28px;
   width:7px;
 }
