@@ -7899,7 +7899,7 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
   content:'';
   display:inline-block;
   margin-left:3px;
-  background-color:black;
+  background-color:#0AD48B;
   animation-name:blink;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
