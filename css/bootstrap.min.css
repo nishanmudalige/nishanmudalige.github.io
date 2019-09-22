@@ -7892,7 +7892,7 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 /* Cursor Styling */
 .cursor::before {
-  content:'>';
+  content:'> ';
 }
 
 .cursor::after {
