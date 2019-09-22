@@ -6674,7 +6674,7 @@ html{
 
 /* Cursor Styling */
 .cursor::before {
-  content:'>';
+  content:'> ';
 }
 
 .cursor::after {
