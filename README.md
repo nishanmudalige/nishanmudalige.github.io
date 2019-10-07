@@ -8,6 +8,6 @@ This is a preview of the top of the website:
 
 ![Preview](/img/pictures/preview.jpg)
 
-Includes some animated text:
+Using some codepen code provided by [David Carr](https://codepen.io/daviddcarr/pen/XVyQMM), I created the following animated text which is incloded in the website:
 
 ![Preview](/vid/coding_skills_animated.mov)
