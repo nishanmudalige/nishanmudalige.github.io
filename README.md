@@ -7,3 +7,7 @@ The theme by [volny](https://github.com/volny/) can be found [here](https://gith
 This is a preview of the top of the website:
 
 ![Preview](/img/pictures/preview.jpg)
+
+Includes some animated text:
+
+![Preview](/img/gifs/coding_skills_animated.gif)
