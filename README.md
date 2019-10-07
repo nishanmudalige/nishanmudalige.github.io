@@ -10,4 +10,4 @@ This is a preview of the top of the website:
 
 Includes some animated text:
 
-![Preview](/img/gifs/coding_skills_animated.gif)
+![Preview](/vid/coding_skills_animated.mov)
