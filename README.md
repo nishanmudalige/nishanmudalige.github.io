@@ -6,7 +6,7 @@ The theme by [volny](https://github.com/volny/) can be found [here](https://gith
 
 This is a preview of the top of the website:
 
-![Preview](/img/pictures/preview.jpg)
+![Preview](/img/pictures/preview/preview.png)
 
 Using some codepen code provided by [David Carr](https://codepen.io/daviddcarr/pen/XVyQMM), I created the following animated text which is incloded in the website:
 
