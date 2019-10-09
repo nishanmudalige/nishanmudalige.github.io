@@ -8,6 +8,10 @@ This is a preview of the top of the website:
 
 ![Preview](/img/preview/preview_home.png)
 
+Each html is sub-divided into a section, such as the "About Me" section
+
+![Preview](/img/preview/preview_about.png)
+
 Using some codepen code provided by [David Carr](https://codepen.io/daviddcarr/pen/XVyQMM), I created the following animated text which is incloded in the website:
 
 ![Preview](/vid/coding_skills_animated.mov)
