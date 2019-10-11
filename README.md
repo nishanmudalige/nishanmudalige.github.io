@@ -19,3 +19,7 @@ Another section is my profile
 Using some codepen code provided by [David Carr](https://codepen.io/daviddcarr/pen/XVyQMM), I created the following animated text which is incloded in the website:
 
 ![Preview](/vid/coding_skills_animated.mov)
+
+Featuring popup animation of tiles:
+
+![Preview](/vid/conference_tile_popup.mov)
