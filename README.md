@@ -22,4 +22,4 @@ Using some codepen code provided by [David Carr](https://codepen.io/daviddcarr/p
 
 Featuring popup animation of tiles:
 
-![Preview](/vid/conference_tile_popup.mov.mov)
+![Preview](/vid/conference_tile_animated.mov)
