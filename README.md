@@ -23,3 +23,7 @@ Using some codepen code provided by [David Carr](https://codepen.io/daviddcarr/p
 Some sections consist of tiled images with links:
 
 ![Preview](/img/preview/preview_conferences.png)
+
+Tile changes on mouse over to provide more information about object that appears when link is clicked.
+
+![Preview](/img/preview/preview_conferences_mouseover.png)
