@@ -24,6 +24,6 @@ Some sections consist of tiled images with links:
 
 ![Preview](/img/preview/preview_conferences.png)
 
-Tile changes on mouse over to provide more information about object that appears when link is clicked.
+Tiles change on mouse over to provide more information about the object that appears when link is clicked.
 
 ![Preview](/img/preview/preview_conferences_mouseover.png)
