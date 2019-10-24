@@ -8,15 +8,15 @@ This is a preview of the top of the website. Note that the opening screen has an
 
 ![Preview](/img/preview/preview_home.png)
 
-Each html is sub-divided into a section, such as the "About Me" section
+Each html is sub-divided into a section, such as the "About Me" section:
 
 ![Preview](/img/preview/preview_about.png)
 
-Another section is my profile
+Another section is my profile:
 
 ![Preview](/img/preview/preview_profile.png)
 
-Aligned text in rows is available for certain sections like education.
+Aligned text in rows is available for certain sections like education:
 
 ![Preview](/img/preview/preview_profile.png)
 
