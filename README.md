@@ -16,7 +16,7 @@ Another section is my profile
 
 ![Preview](/img/preview/preview_profile.png)
 
-Using css code provided by [David Carr](https://codepen.io/daviddcarr/pen/XVyQMM), I created the following animated text which is incloded in the website:
+Using css code provided by [David Carr](https://codepen.io/daviddcarr/pen/XVyQMM), we created the following animated text which is incloded in the website:
 
 ![Preview](/vid/coding_skills_animated.mov)
 
