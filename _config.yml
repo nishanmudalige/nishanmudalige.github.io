@@ -1,33 +1,14 @@
-title: Belkirk College of Engineering
-short_title: Belkirk
-description: Jekyll demo for Forestry CMS
-baseurl:
-permalink: "/:path/"
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: page
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-collections:
-  people:
-    output: true
-    permalink: "/about/:path/"
-  posts:
-    output: true
-  projects:
-    output: true
-    permalink: "/projects/:path/"
-# tag_page_layout: tag_page
-# tag_page_dir: tag
-jekyll-archives:
-  enabled: all
-  layout: "archive"
-plugins:
-  - jekyll-menus
-  - jekyll-feed
-  - jekyll-archives
+# Site settings
+highlighter: rouge
+name: Nishan Mudalige
+
+title: Nishan Mudalige - Personal Website
+email: "mudalign@uoguelph.ca"
+description: Personal website of Nishan Mudalige
+baseurl: "https://nishanmudalige.github.io"
+url: "https://nishanmudalige.github.io"
+
+github_username: nishanmudalige
+
+# Build settings
+markdown: kramdown
