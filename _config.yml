@@ -1,0 +1,14 @@
+# Site settings
+highlighter: rouge
+name: Nishan Mudalige
+
+title: Nishan Mudalige - Personal Website
+email: "mudalign@uoguelph.ca"
+description: Personal website of Nishan Mudalige
+baseurl: "https://nishanmudalige.github.io"
+url: "https://nishanmudalige.github.io"
+
+github_username: nishanmudalige
+
+# Build settings
+markdown: kramdown
