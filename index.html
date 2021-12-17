@@ -2,65 +2,6 @@
 <html lang="en">
 
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  /* Center the loader */
-  #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-  }
-
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 }
-    to { bottom:0px; opacity:1 }
-  }
-
-  @keyframes animatebottom {
-    from{ bottom:-100px; opacity:0 }
-    to{ bottom:0; opacity:1 }
-  }
-
-  #myDiv {
-    display: none;
-    text-align: center;
-  }
-  </style>
-
-
-
-
-
-
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -95,29 +36,7 @@
   ======================================================== -->
 </head>
 
-<body onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
-
-<!--
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Tada!</h2>
-  <p>Some text in my newly loaded page..</p>
-</div>
--->
-
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
+<body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
@@ -310,7 +229,6 @@ function showPage() {
       <div class="row text-center">
         <h2 class="section-heading"><b>Profile</b></h2>
       </div>
-
       </br>
       </br>
       -->
@@ -383,30 +301,24 @@ function showPage() {
     <!--
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
-
         <div class="row">
           <div class="col-lg-6 video-box">
             <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
-
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <h4 class="title"><a href="">Lorem Ipsum</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
-
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
               <h4 class="title"><a href="">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-
           </div>
         </div>
-
       </div>
     </section><!-- End Why Us Section - ->
     -->
@@ -441,7 +353,6 @@ function showPage() {
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -452,7 +363,6 @@ function showPage() {
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
@@ -463,7 +373,6 @@ function showPage() {
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
@@ -473,9 +382,7 @@ function showPage() {
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
-
           </div>
-
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About Moderna</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
@@ -486,7 +393,6 @@ function showPage() {
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -534,7 +440,6 @@ function showPage() {
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -545,7 +450,6 @@ function showPage() {
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
@@ -556,7 +460,6 @@ function showPage() {
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
@@ -566,9 +469,7 @@ function showPage() {
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
-
           </div>
-
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About Moderna</h3>
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
@@ -579,7 +480,6 @@ function showPage() {
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -606,8 +506,6 @@ function showPage() {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 
 </body>
 
