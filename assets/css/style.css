@@ -502,11 +502,13 @@ section {
   position: absolute;
   display: block;
   width: 120px;
-  height: 1px;
-  background: #ddd;
+  height: 3px;
+  background: #68A4C4;
+  /* background: #ddd; */
   bottom: 1px;
   left: calc(50% - 60px);
 }
+/*
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -516,7 +518,7 @@ section {
   background: #68A4C4;
   bottom: 0;
   left: calc(50% - 20px);
-}
+}*/
 .section-title p {
   margin-bottom: 0;
 }
