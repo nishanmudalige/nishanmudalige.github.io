@@ -2102,3 +2102,72 @@ hr {
   background-color: red;
   mix-blend-mode: darken;
 }
+
+
+
+
+
+.type {
+  display:inline-flex;
+}
+/*
+.type::after {
+  content:'█';
+  display:inline-block;
+  margin-left:3px;
+  background-color:#05AC72;
+  border-right: .5em solid #05AC72;
+} */
+
+.type span {
+  word-break: break-all;
+  height: 1.2em;
+  width:0%;
+  overflow: hidden;
+  animation:t 3s linear infinite alternate;
+}
+.type span:before {
+  content:" ";
+  display:inline-block;
+}
+
+
+@keyframes t {
+  90%,100% {width:100%}
+}
+
+
+
+
+.blink_me {
+  animation: blinker 0.25s linear infinite;
+  background-color:#05AC72;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+/**/
+
+h1 {
+  display:table;
+  margin:auto;
+}
+/*
+h2 {
+  display:table;
+  margin:auto;  /* Remove centering * /
+} */
+
+p {
+  font-size:25px;
+}
+
+p + p {
+  font-style:italic;
+}
