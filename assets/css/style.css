@@ -2164,6 +2164,7 @@ h2 {
   margin:auto;  /* Remove centering * /
 } */
 
+/*
 p {
   font-size:25px;
 }
@@ -2171,3 +2172,4 @@ p {
 p + p {
   font-style:italic;
 }
+*/
