@@ -1987,7 +1987,8 @@ section {
   line-height: 26px;
 }
 #footer .copyright {
-  text-align: center;
+  text-align: left;
+  /* text-align: center; */
   padding-top: 30px;
 }
 #footer .credits {
