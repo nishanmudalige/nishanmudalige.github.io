@@ -2,4 +2,6 @@ This is a (somewhat heavily) customized version of the Moderna template created 
 
 Moderna template Available at: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ .
 
-(Under construction).
+To do:
+
+- Add "powered by mathjax" in footer
