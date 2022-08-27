@@ -4,4 +4,4 @@ Moderna template Available at: https://bootstrapmade.com/free-bootstrap-template
 
 To do:
 
-- Add "powered by mathjax" in footer
+- Divide footer into 2 divs (L align, R align).
