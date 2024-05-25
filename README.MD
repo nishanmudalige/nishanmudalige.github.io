@@ -1,3 +1,3 @@
-This is a (heavily) customized version of the Moderna template created by BootstrapMade.com.
+This is a (heavily) customized version of the Moderna template created by [BootstrapMade](https://bootstrapmade.com/).
 
-Moderna template Available at: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+The Moderna template Available is available [here](https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/).
