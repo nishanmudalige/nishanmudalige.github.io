@@ -1513,3 +1513,54 @@ a:hover {
   padding-top: 80px;
   box-sizing: border-box;
 }
+
+
+/*
+.name-highlight::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-secondary);
+    margin: 1.5rem 0;
+}
+*/
+
+
+
+
+/* Reusable Horizontal Line Divider */
+.divider-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-secondary);
+    margin: 1.5rem 0;
+    border: none;
+    display: block;
+}
+
+.divider-line.centered {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider-line.thick {
+    height: 3.4px;
+}
+
+.divider-line.thin {
+    height: 1px;
+}
+
+.divider-line.primary {
+    background-color: var(--primary-color);
+}
+
+.divider-line.secondary {
+    background-color: var(--secondary-color);
+}
+
+.divider-line.accent {
+    background-color: var(--accent-color);
+}
