@@ -35,34 +35,31 @@
         </div>
     </nav>
 
-    <!-- Video Background Section -->
-    <section id="video-bg" class="video-background-section">
-        <!-- Second overlay -->
-        <div class="hero-bg-box"></div>
-        <div class="overlay"></div>
+<!-- Video Background Section (now contains the hero text too) -->
+<section id="video-bg" class="video-background-section">
+  <div class="hero-bg-box"></div>
+  <div class="overlay"></div>
 
-        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline>
-            <source src="assets/mathequations.mp4" type="video/mp4">
-            <source src="movie.webm" type="video/webm">
-            Sorry, your browser does not support HTML5 video.
-        </video>
-    </section>
+  <!-- Hero text OVER the overlays -->
+  <div class="hero-container">
+    <div class="center-text">
+      <div>
+        <h1 class="hero-title">
+          <span class="name-highlight">Nishan Mudalige, PhD</span>
+        </h1>
+        <br>
+        <h2 class="hero-subtitle">Personal Website</h2>
+      </div>
+    </div>
+  </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="center-text">
-                <div>
-                    <h1 class="hero-title">
-                        <span class="name-highlight">Nishan Mudalige, PhD</span>
-                    </h1>
-                    <!-- <hr class="light"> -->
-                    <br>
-                    <h2 class="hero-subtitle">Personal Website</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+  <video id="videobcg" preload="auto" autoplay loop muted playsinline>
+    <source src="assets/mathequations.mp4" type="video/mp4">
+    <source src="movie.webm" type="video/webm">
+    Sorry, your browser does not support HTML5 video.
+  </video>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">

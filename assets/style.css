@@ -215,23 +215,25 @@ body {
 }
 
 /* Make the video always cover the hero box */
-#hero #videobcg {
+#videobcg {
   position: absolute;
-  inset: 0;            /* top:0; right:0; bottom:0; left:0 */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* key: no letterboxing / no overflow mismatch */
-  z-index: 0;          /* avoid negative z-index weirdness */
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -100;
 }
 
 /* Make the overlay always match the hero box */
 #hero .overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
+    position: absolute;  /* Change from relative to absolute */
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
 
 
@@ -1467,3 +1469,47 @@ a:hover {
 
 
 
+/* Keep the video strictly inside the video section (prevents it from appearing behind footer) */
+/* Ensure the video section is the “hero” container */
+#video-bg {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Video: bottom layer */
+#video-bg #videobcg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlays: middle layer */
+#video-bg .overlay,
+#video-bg .hero-bg-box {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Text: top layer, centered */
+#video-bg .hero-container {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Optional: keep text from sitting under the fixed navbar (80px high) */
+  padding-top: 80px;
+  box-sizing: border-box;
+}
