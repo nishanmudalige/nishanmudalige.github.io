@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishan Mudalige</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+	<div class="nav-container">
+		<a href="index.html" class="nav-logo">Nishan Mudalige</a>
+		<div class="nav-menu" id="navMenu">
+			<a href="index.html" class="nav-link" data-page="home">Home</a>
+			<a href="about.html" class="nav-link" data-page="about">About</a>
+            <a href="education.html" class="nav-link" data-page="education">Education</a>
+			<a href="skills.html" class="nav-link" data-page="skills">Skills</a>
+			<a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+			
+			<!-- Add theme toggle switch here -->
+			<div class="theme-switch-wrapper">
+				<input type="checkbox" id="themeToggle" class="theme-checkbox">
+				<label for="themeToggle" class="theme-label">
+					<i id="themeIcon" class="fas fa-moon"></i>
+				</label>
+			</div>
+		</div>
+		<div class="nav-toggle" id="navToggle">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</div>
+</nav>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <i id="themeIcon" class="fas fa-sun"></i>
+    </button>
+
+    <!-- Loading Screen - ->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="terminal-loader">
+            <div class="terminal-text" style="color: #10b981;">sarah@portfolio:~$ <span class="cursor">▋</span></div>
+        </div>
+    </div>
+    -->
+
+    <!-- Skills Section -->
+    <section class="skills page-content" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Skills & Expertise</h1>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+
+            <div class="skills-content fade-in-up">
+                <!-- Frontend Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">SQL & Databases</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Git & Version Control</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science & AI -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-brain"></i> Data Science & AI/ML</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Data Analysis</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Data Visualization</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="87%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-microscope"></i></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Statistical Analysis</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Terminal/CLI</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-book"></i>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cube"></i>
+                            <span>R</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Nishan Mudalige. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/nishanmudalige" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/nishan-m" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

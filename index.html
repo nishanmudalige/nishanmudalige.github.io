@@ -1,487 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Nishan Mudalige - Personal Website</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/icon/favicon.ico" rel="icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-  <link rel="manifest" href="assets/icon/site.webmanifest"
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-   
-    <!-- Font Awesome Icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Moderna - v4.8.0
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
-  </script>
-  <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishan Mudalige</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- MathJax CDN -->
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+	<div class="nav-container">
+		<a href="index.html" class="nav-logo">Nishan Mudalige</a>
+		<div class="nav-menu" id="navMenu">
+			<a href="index.html" class="nav-link" data-page="home">Home</a>
+			<a href="about.html" class="nav-link" data-page="about">About</a>
+            <a href="education.html" class="nav-link" data-page="education">Education</a>
+			
+			<!-- Add theme toggle switch here -->
+			<div class="theme-switch-wrapper">
+				<input type="checkbox" id="themeToggle" class="theme-checkbox">
+				<label for="themeToggle" class="theme-label">
+					<i id="themeIcon" class="fas fa-moon"></i>
+				</label>
+			</div>
+		</div>
+		<div class="nav-toggle" id="navToggle">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</div>
+</nav>
 
-      <div class="logo">
-        <h4 class="text-light"><a href="index.html"><span>Nishan Mudalige</span></a></h4>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="awards.html">Awards</a></li>
-          <li><a href="coding.html">Coding Skills</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+    <!-- Theme Toggle - ->
+    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+        <i id="themeIcon" class="fas fa-sun"></i>
+    </button>
+    -->
+    
+    <!-- Loading Screen - ->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="terminal-loader">
+            <div class="terminal-text" style="color: #10b981;">sarah@portfolio:~$ <span class="cursor">▋</span></div>
+        </div>
     </div>
-  </header><!-- End Header -->
+    -->
 
+    
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <!-- <div class="overlay"></div> -->
-
-    <div class="before"></div>
-    <!-- <section id="banner"> -->
-    <section id="banner"
-       style="background-color:rgba(3, 169, 244, 0.3); background-blend-mode: overlay;">
-
+  <!-- Second overlay -->
+  <div class="hero-bg-box"></div>
+    <div class="overlay"></div>
 
         <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted"
             volume="0" playsinline controls="true">
-            <source src="assets/vid/mathequations.mp4" type="video/mp4" playsinline controls="true">
+            <source src="assets/mathequations.mp4" type="video/mp4" playsinline controls="true">
             <source src="movie.webm" type="video/webm">Sorry, your browser does not support HTML5 video.
         </video>
 
-          <div class="mycontainer">
-            <h2>Nishan Mudalige, PhD</h2>
-            <hr class="light">
-            <h4>Personal Website</h4>
-            <!-- <h4>(Under construction)</h4> -->
-            <!-- <h5 style="background-color:powderblue;">icon1 icon2 icon3</h5> -->
-            <!--
-            <h5 style="color:white;">
-                <i style="font-size:24px" class="fa">&#xf09b;</i>
-                &nbsp;
-                <i style="font-size:24px" class="fa fa-linkedin-square" aria-hidden="true"></i>
-                &nbsp;
-                <i style="font-size:24px" class="fa fa-university" aria-hidden="true"></i>
-            </h5>
-            -->
-            <a href="https://github.com/nishanmudalige" target="_blank">
-            <i style="font-size:27px; color:white;" class="fa">&#xf09b;</i>
-            &nbsp;&thinsp;&thinsp;
-                
-            <a href="https://www.linkedin.com/in/nishan-m/" target="_blank">
-            <i style="font-size:26px; color:white;" class="fa fa-linkedin-square" aria-hidden="true"></i>
-            &nbsp;&thinsp;&thinsp;
-            
-            <a href="https://www.utm.utoronto.ca/math-cs-stats/people/nishan-mudalige" target="_blank">
-            <i style="font-size:23.5px; color:white;" class="fa fa-university" aria-hidden="true"></i>
-                
-            <br>
-            <a href="#aboutme" class="btn-get-started wow section">Read More</a>
-          </div>
-
-
-
-    </section>
-    <div class="after"></div>
-
-
   </section><!-- End Hero -->
-
-  <main id="main">
-
-
-    <!-- ======= Features Section ======= -->
-    <section class="services" , id="aboutme">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>About Me</h2>
-        </div>
-
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/hello.jpg" class="img-fluid" alt="">
-              <small style="font-size:12px">
-                  Credit: <a href="https://unsplash.com/@esteejanssens?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Estée Janssens</a> on <a href="https://unsplash.com/photos/green-and-white-hello-board-decor-2enBTsIVhUU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-              </small>
-          </div>
-          <div class="col-md-7 pt-4">
-            <h3>Brief Introduction</h3>
-            <p>
-              I am an
-              <u><a href="https://www.utm.utoronto.ca/math-cs-stats/people/nishan-mudalige" target="_blank">Assistant Professor (Teaching Stream) in Statistics</a></u>
-              with the 
-              <u><a href="https://www.utm.utoronto.ca/math-cs-stats/" target="_blank">Department of Mathematical and Computational Sciences</a></u>  
-              at the
-              <u><a href="https://www.utm.utoronto.ca" target="_blank">University of Toronto at Mississauga</a></u>
-              in Mississauga, ON, Canada.
-            </p>
-            <!--
-            <p>
-              Coindidentally, the 
-                <u><a href="https://www.utm.utoronto.ca" target="_blank">University of Toronto at Mississauga</a></u> is also the same university I completed my
-                <u><a href="education.html#education">bachelor's degree</a></u>.
-            </p>
-            -->
-            <p>
-              My formal training is in mathematics and statistics.
-            </p>
-          </div>
-        </div>
-
-        <br>
-        <hr  data-aos="fade-up" style="max-width:auto; height: 1px; margin: auto;">
-        <br>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/projects2.jpeg" class="img-fluid" alt="">
-              <small style="font-size:12px">
-                Credit: <a href="https://unsplash.com/@americanjael?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">American Jael</a> on <a href="https://unsplash.com/photos/a-person-writing-on-a-notebook-with-colored-pens-OEvLi8LM7cc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-              </small>
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <!-- <h3> Current and Recent Work </h3> -->
-            <h3> Current Projects </h3>
-            <p>
-              I am currently applying statistical concepts on projects related to:
-            </p>
-            <ul>
-              <!-- <li> Health technology assessment <i>(Classified)</i> </li> -->
-              <li> Distributions over \(\mathbb{S}^{p-1}\) </li>
-              <li> Hyper-parameter tuning of unconstrained optimization solvers </li>
-              <li> Using \(\texttt{learnr}\) for developing web-based programming </li>
-                <ul>
-                <!-- <li>  Joint work with Dr. Louis-Paul Rivest.</i> -->
-                </ul>
-              <!--
-              <li> Hematology </li>
-              <ul>
-              <li>  Joint work with Dr. Hayley Merkely (West Coast Hematology), Vignesh Murthy (BC Cancer).</i>
-              </ul>
-              <!-- <li> SARS‑CoV‑2 virus (i.e. the virus that causes Covid-19) </li> - ->
-                <ul>
-                <li>  Joint work with the pandemic response unit <i>(Further details classified)</i>
-                </ul>
-              -->
-            </ul>
-			<!--
-			<p>
-              Some recent projects I completed are related to:
-            </p>
-            <ul>
-              <li> Trees </li>
-                <ul>
-                <li>  Joint work with Dr. Louis-Paul Rivest (Laval) and Pierre Dutilleul (McGill).</i>
-                </ul>
-              <li> Hematology </li>
-                <ul>
-                <li>  Joint work with Dr. Marlee McGuire, Dr. Hayley Merkely and Lilian Ding
-                </ul>
-            </ul>
-			-->
-          </div>
-        </div>
-
-        <br>
-        <hr  data-aos="fade-up" style="max-width:auto; height: 1px; margin: auto;">
-        <br>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/education.jpeg" class="img-fluid" alt="">
-              <small style="font-size:12px">
-                Credit: <a href="https://unsplash.com/@mattragland?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matt Ragland</a> on <a href="https://unsplash.com/photos/flat-lay-photography-of-blue-backpack-beside-book-and-silver-macbook-02z1I7gv4ao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-              </small>
-          </div>
-          <div class="col-md-7 pt-5">
-            <h3>Background</h3>
-            <p>
-              I completed my PhD in Applied Statistics from the
-              <u><a href="https://www.uoguelph.ca" target="_blank">University of Guelph</a></u>
-              under the supervision of <u><a href="https://mathstat.uoguelph.ca/people/kim" target="_blank">Dr. Peter Kim</a></u>
-              and <u><a href="https://mathstat.uoguelph.ca/people/desmond" target="_blank">Dr. Tony Desmond</a></u>.
-            </p>
-            <p>
-              My math genealogy tree can be found
-              <u><a href="https://drive.google.com/file/d/1GEOV08bqtOZPEKm31CoFLuDXt5MQWf4i/view?usp=sharing" target="_blank"> here</a></u>
-              (Created with data gathered from the
-              <u><a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=267621" target="_blank"> Mathematics Genealogy Project</a></u>).
-            </p>
-            <p>
-              My Erd&#246;s number is <u><a href="https://mathscinet.ams.org/mathscinet/freetools/collab-dist?source=1050399&target=189017" target="_blank"> 3</a></u>
-              and my Dijkstra number is <u><a href="https://mathscinet.ams.org/mathscinet/freetools/collab-dist?source=1050399&target=58025" target="_blank"> 6</a></u>
-              (Verified using the
-              <u><a href="https://mathscinet.ams.org/mathscinet/collaborationDistance.html" target="_blank">
-                  Collaboration Distance Tool</a></u>
-              provided by
-              <u><a href="https://mathscinet.ams.org/" target="_blank"> MathSciNet</a></u>).
-            </p>
-            <p>
-              My dissertation can be found
-              <u><a href="https://hdl.handle.net/10214/21270" target="_blank"> here</a></u>.
-              My PhD research was related to providing a unifying theory for the relationship between some broad classes of density functions over the hyper-surface \(\mathbb{S}^{p-1}\).
-              <!-- $\mathbb{S}^{p-1}$ -->
-            </p>
-          </div>
-        </div>
-
-        <br>
-        <hr  data-aos="fade-up" style="max-width:auto; height: 1px; margin: auto;">
-        <br>
-
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/coding.jpeg" class="img-fluid" alt="">
-              <small style="font-size:12px">
-                  Credit: <a href="https://unsplash.com/@marvelous?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marvin Meyer</a> on <a href="https://unsplash.com/photos/people-sitting-down-near-table-with-assorted-laptop-computers-SYTO3xs06fU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-              </small>
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Coding</h3>
-            <p>
-              I code in a variety of languages, however I am most familiar with
-              <u><a href="https://www.sas.com/en_ca/home.html" target="_blank"> SAS</a></u>,
-              <u><a href="https://www.r-project.org" target="_blank"> R</a></u>
-              and
-              <u><a href="https://www.python.org" target="_blank"> Python</a></u>.
-            </p>
-            <p>
-              I also use use <u><a href="https://github.com/" target="_blank"> GitHub</a></u> for version control with projects.
-            </p>  
-            <p>
-              I am also familar with various flavous of
-              <u><a href="https://en.wikipedia.org/wiki/SQL" target="_blank"> SQL</a></u>,
-              including <u><a href="https://docs.snowflake.com/en/sql-reference/constructs" target="_blank"> Snowflake SQL</a></u>,
-                and
-              <u><a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver16" target="_blank"> 
-                  T-SQL</a></u>
-              on cloud architecture implemented over <u><a href="https://azure.microsoft.com/en-ca/" target="_blank"> Azure</a></u>.
-            </p>
-            <!--
-            <p>
-              I am also a member on
-              and the
-            </p>
-            -->
-          </div>
-        </div>
-
-        <br>
-        <hr  data-aos="fade-up" style="max-width:auto; height: 1px; margin: auto;">
-        <br>
-
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/growth3.jpg" class="img-fluid" alt="">
-              <small style="font-size:12px">
-                Credit: <a href="https://unsplash.com/@noahbuscher?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Noah Buscher</a> on <a href="https://unsplash.com/photos/green-plant-x8ZStukS2PM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-              </small>
-          </div>
-          <div class="col-md-7 pt-5">
-            <h3>Professional Development</h3>
-            <p>I am an
-              <u><a href="https://ssc.ca/en/accreditation/directory/contact/2586" target="_blank">Professional Statistician (P.STAT.)</a></u>
-              and an
-              <u><a href="http://ima.org.uk" target="_blank">Associate Member of the Institute of Mathematics and its Applications (AMIMA)</a></u>
-              .
-            </p>
-          </div>
-        </div>
-
-
-      </div>
-    </section><!-- End Services Section -->
-
-
-
-
-    <!--
-    <!-- ======= Services Section ======= - ->
-    <section class="services section-bg" , id="profile">
-
-      <!--
-      <div class="row text-center">
-        <h2 class="section-heading"><b>Profile</b></h2>
-      </div>
-      </br>
-      </br>
-      - ->
-
-      <div class="section-title" data-aos="fade-up">
-        <h2>Profile</h2>
-      </div>
-
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box icon-box-ppink">
-              <img src="assets/svg/scholar.svg" alt="scholar image">
-              </br>
-              </br>
-              <h4 class="title"> Scholar </h4>
-              <p class="description">Award winning scholar with a solid foundation in mathematics, statistics and computer programming.
-              </p>
+    
+ 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        
+        <div class="hero-container">
+            <!-- <div class="hero-content"> -->
+            <div class="center-text">
+                <div>
+                    <!--
+                    <div class="greeting">
+                        <span>Hello!</span>
+                        <span class="wave">👋</span>
+                    </div>
+                    -->
+                    <h1 class="hero-title">
+                        <span class="name-highlight">Nishan Mudalige, PhD</span></h1>
+                    <hr class="light">
+                    <br>
+                    <h2 class="hero-subtitle">Personal Website</h2>
+                    <!--
+                    <p class="hero-description">
+                        I'm an
+                        <span class="highlight">assistant professor</span>
+                        in 
+                        <span class="highlight">statistics</span>
+                        at the 
+                        <span class="highlight">University of Toronto</span>.
+                    </p>
+                    -->
+                    <!--
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View My Work
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get in Touch
+                        </a>
+                    </div>
+                    -->
+                    
+                <!--
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-section">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <div class="control close"></div>
+                                    <div class="control minimize"></div>
+                                    <div class="control maximize"></div>
+                                </div>
+                                <div class="window-title">Readme</div>
+                            </div>
+                            <div class="code-content">
+                                <div><span class="keyword">const</span> 
+                                    profile = {</div>
+                                <div>&nbsp;&nbsp;name: <span class="string">"Nishan Mudalige"</span>,</div>
+                                <div>&nbsp;&nbsp;skills: [<span class="string">"Python"</span>, <span class="string">"R"</span>, <span class="string">"Git"</span>],</div>
+                                <div>&nbsp;&nbsp;primary: <span class="string">"Teaching Statistics"</span></div>
+                                <div>}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
             </div>
-          </div>
-
-          <div class="col d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box icon-box-porange">
-              <img src="assets/svg/analytic.svg" alt="analytic image">
-              </br>
-              </br>
-              <h4 class="title">Analytic</h4>
-              <p class="description">Strong analytical background in data science and machine learning.</p>
-            </div>
-          </div>
-
-          <div class="col d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-pgreen">
-              <img src="assets/svg/programmer.svg" alt="programmer image">
-              </br>
-              </br>
-              <h4 class="title">Programmer</a></h4>
-              <p class="description">Proficient in many programming languages.</p>
-            </div>
-          </div>
-
-          <div class="col d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-pblue">
-              <img src="assets/svg/experienced.svg" alt="experienced image">
-              </br>
-              </br>
-              <h4 class="title">Experienced</a></h4>
-              <p class="description">Professional work experience in both academia and industry.</p>
-            </div>
-          </div>
-
-          <div class="col d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-ppurple">
-              <img src="assets/svg/researcher.svg" alt="researcher image">
-              </br>
-              </br>
-              <h4 class="title">Researcher</a></h4>
-              <p class="description">Skilled at conducting independent and collaborative research.</p>
-            </div>
-          </div>
-
         </div>
-
-      </div>
-    </section><!-- End Services Section - ->
-
-  -->
-
-
-
-  </main><!-- End #main -->
-
-    <section class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <p>All images on this page are open source and subject to a 
-                <u><a href="https://creativecommons.org/share-your-work/cclicenses/">Creative Commons License</a></u>.
-            </p>
+        <!--
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
         </div>
-      </div>
-    </section>              
-              
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Nishan Mudalige, 2025</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits" style="text-align:left;">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-        Designed using the
-        <a href="https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/">Moderna</a>
-        template by
-        <a href="https://bootstrapmade.com/">BootstrapMade</a>.
-            <span style="float:right;">
-                Powered by <a href="https://www.mathjax.org">MathJax</a>.
-            </span>
-      </div>
-      <!--
-      <div class="credits">
-        Powered by <a href="https://www.mathjax.org">MathJax</a>.
-      <div>
-      -->
-    </div>
+        -->
+    </section>
+    
 
-  </footer><!-- End Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Nishan Mudalige. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/nishanmudalige" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/nishan-m" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- MathJax Scripts -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
+    <script src="assets/main.js"></script>
 </body>
-
 </html>
