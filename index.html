@@ -7,139 +7,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <!-- MathJax CDN -->
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar" id="navbar">
-	<div class="nav-container">
-		<a href="index.html" class="nav-logo">Nishan Mudalige</a>
-		<div class="nav-menu" id="navMenu">
-			<a href="index.html" class="nav-link" data-page="home">Home</a>
-			<a href="about.html" class="nav-link" data-page="about">About</a>
-            <a href="education.html" class="nav-link" data-page="education">Education</a>
-			
-			<!-- Add theme toggle switch here -->
-			<div class="theme-switch-wrapper">
-				<input type="checkbox" id="themeToggle" class="theme-checkbox">
-				<label for="themeToggle" class="theme-label">
-					<i id="themeIcon" class="fas fa-moon"></i>
-				</label>
-			</div>
-		</div>
-		<div class="nav-toggle" id="navToggle">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</div>
-	</div>
-</nav>
-
-    <!-- Theme Toggle - ->
-    <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
-        <i id="themeIcon" class="fas fa-sun"></i>
-    </button>
-    -->
-    
-    <!-- Loading Screen - ->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="terminal-loader">
-            <div class="terminal-text" style="color: #10b981;">sarah@portfolio:~$ <span class="cursor">▋</span></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Nishan Mudalige</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="about.html" class="nav-link" data-page="about">About</a>
+                <a href="education.html" class="nav-link" data-page="education">Education</a>
+                
+                <!-- Add theme toggle switch here -->
+                <div class="theme-switch-wrapper">
+                    <input type="checkbox" id="themeToggle" class="theme-checkbox">
+                    <label for="themeToggle" class="theme-label">
+                        <i id="themeIcon" class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </div>
-    -->
+    </nav>
 
-    
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+    <!-- Video Background Section -->
+    <section id="video-bg" class="video-background-section">
+        <!-- Second overlay -->
+        <div class="hero-bg-box"></div>
+        <div class="overlay"></div>
 
-  <!-- Second overlay -->
-  <div class="hero-bg-box"></div>
-    <div class="overlay"></div>
-
-        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted"
-            volume="0" playsinline controls="true">
-            <source src="assets/mathequations.mp4" type="video/mp4" playsinline controls="true">
-            <source src="movie.webm" type="video/webm">Sorry, your browser does not support HTML5 video.
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" playsinline>
+            <source src="assets/mathequations.mp4" type="video/mp4">
+            <source src="movie.webm" type="video/webm">
+            Sorry, your browser does not support HTML5 video.
         </video>
+    </section>
 
-  </section><!-- End Hero -->
-    
- 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        
         <div class="hero-container">
-            <!-- <div class="hero-content"> -->
             <div class="center-text">
                 <div>
-                    <!--
-                    <div class="greeting">
-                        <span>Hello!</span>
-                        <span class="wave">👋</span>
-                    </div>
-                    -->
                     <h1 class="hero-title">
-                        <span class="name-highlight">Nishan Mudalige, PhD</span></h1>
+                        <span class="name-highlight">Nishan Mudalige, PhD</span>
+                    </h1>
                     <hr class="light">
                     <br>
                     <h2 class="hero-subtitle">Personal Website</h2>
-                    <!--
-                    <p class="hero-description">
-                        I'm an
-                        <span class="highlight">assistant professor</span>
-                        in 
-                        <span class="highlight">statistics</span>
-                        at the 
-                        <span class="highlight">University of Toronto</span>.
-                    </p>
-                    -->
-                    <!--
-                    <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i> View My Work
-                        </a>
-                        <a href="contact.html" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Get in Touch
-                        </a>
-                    </div>
-                    -->
-                    
-                <!--
                 </div>
-                <div class="hero-visual">
-                    <div class="profile-section">
-                        <div class="code-window">
-                            <div class="window-header">
-                                <div class="window-controls">
-                                    <div class="control close"></div>
-                                    <div class="control minimize"></div>
-                                    <div class="control maximize"></div>
-                                </div>
-                                <div class="window-title">Readme</div>
-                            </div>
-                            <div class="code-content">
-                                <div><span class="keyword">const</span> 
-                                    profile = {</div>
-                                <div>&nbsp;&nbsp;name: <span class="string">"Nishan Mudalige"</span>,</div>
-                                <div>&nbsp;&nbsp;skills: [<span class="string">"Python"</span>, <span class="string">"R"</span>, <span class="string">"Git"</span>],</div>
-                                <div>&nbsp;&nbsp;primary: <span class="string">"Teaching Statistics"</span></div>
-                                <div>}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
             </div>
         </div>
-        <!--
-        <div class="scroll-indicator">
-            <div class="scroll-arrow">↓</div>
-        </div>
-        -->
     </section>
-    
 
     <!-- Footer -->
     <footer class="footer">

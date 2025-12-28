@@ -197,46 +197,40 @@ body {
 }
 
 /* Hero Section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    /* background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); */
-    position: relative;
-    overflow: hidden;
-    padding-top: 0px;
-    /* background: transparent; */
+
+/* Make the video hero a real sized container */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0;          /* overrides your global section padding for this section */
+  overflow: hidden;    /* prevents any video overflow from showing */
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-/*  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e5e7eb" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.5; 
-(for grid backghround)
-*/
+/* Make the video always cover the hero box */
+#hero #videobcg {
+  position: absolute;
+  inset: 0;            /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* key: no letterboxing / no overflow mismatch */
+  z-index: 0;          /* avoid negative z-index weirdness */
 }
 
-.hero-container {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: var(--container-max-width);
-    margin: 0 auto;
-    padding: 0 2rem;
+/* Make the overlay always match the hero box */
+#hero .overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.hero-content {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	gap: 3rem;
-	align-items: flex-start;
-}
+
+
+
 
 .greeting {
     display: flex;
@@ -1433,7 +1427,7 @@ a:hover {
 }
 
 
-/*
+
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -1441,4 +1435,3 @@ a:hover {
   position: relative;
   z-index: 100;  /* Add this line * /
 }
-*/
