@@ -268,7 +268,12 @@ body {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+
 
 .name-highlight {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -1458,3 +1463,7 @@ a:hover {
 .footer-links a:hover {
     color: var(--primary-color);
 }
+
+
+
+
