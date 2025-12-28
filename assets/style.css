@@ -1433,6 +1433,7 @@ a:hover {
 }
 
 
+/*
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -1440,3 +1441,4 @@ a:hover {
   position: relative;
   z-index: 100;  /* Add this line * /
 }
+*/
