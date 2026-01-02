@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /skills.html
+Disallow: /projects.html
+Sitemap: https://nishanmudalige.github.io/sitemap.xml
+
+User-agent: *
+Allow: /
